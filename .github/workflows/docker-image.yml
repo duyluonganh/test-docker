@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name
     - name: Run image
-      run: docker run --privileged -it my-image-name google-chrome --no-sandbox --headless --disable-gpu --screenshot https://www.chromestatus.com/
+      run: docker run my-image-name google-chrome --no-sandbox --headless --disable-gpu --screenshot https://www.chromestatus.com/
