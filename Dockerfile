@@ -4,7 +4,7 @@ FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Update the package list and install necessary packages
-RUN apt-get update && apt-get install -y wget gnupg
+RUN apt-get update && apt-get install -y wget gnupg dbus-user-session
 
 # Add the Google Chrome repository key
 RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
