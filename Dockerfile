@@ -1,5 +1,5 @@
 # Use the latest Ubuntu image from Docker Hub
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
 # Update the package list and install necessary packages
 RUN apt-get update && apt-get install -y wget gnupg
